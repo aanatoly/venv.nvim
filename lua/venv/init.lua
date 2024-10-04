@@ -8,11 +8,10 @@ local defaults = {
 --- @type VenvOptions
 M.options = {}
 
-local utils = require("venv.utils")
+local utils = require "venv.utils"
 
 function M.setup(options)
     M.options = vim.tbl_deep_extend("force", {}, defaults, options or {})
-    print("venv init", vim.inspect(M.options))
     vim.api.nvim_create_user_command("Venv", function(fopts)
         local venv_path = fopts.args
         utils.venv_activate(venv_path)
@@ -29,8 +28,6 @@ function M.setup(options)
     end, {
         desc = "Print venv info",
     })
-
 end
-
 
 return M

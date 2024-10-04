@@ -90,6 +90,7 @@ function M.venv_activate(venv_path)
     vim.env.VIRTUAL_ENV = venv_path
     vim.env.PATH = venv_path .. "/bin:" .. vim.env.PATH
     print("Activated virtual environment: " .. venv_path)
+    vim.cmd "LspRestart"
 end
 
 function M.venv_info()
