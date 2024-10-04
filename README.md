@@ -27,5 +27,5 @@ Select venv from menu, press Tab instead of argument
 ```
 Print venv info
 ```
-VenvInfo
+:VenvInfo
 ```
