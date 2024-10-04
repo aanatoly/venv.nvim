@@ -1,8 +1,8 @@
 # venv.nvim
 
-neovim plugin to switch python virtual environemnts
+neovim plugin to switch python virtual environments
 
-It provides completetion with venvs found in `search_path`.
+It provides completion with venvs found in `search_path`.
 
 ## Installation
 
@@ -21,7 +21,7 @@ Switch to specific venv
 ```
 :Venv som/dir
 ```
-Selct venv from menu, press Tab instead of argument
+Select venv from menu, press Tab instead of argument
 ```
 :Venv [TAB]
 ```
